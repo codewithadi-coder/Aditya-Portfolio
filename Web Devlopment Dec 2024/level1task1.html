@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Zemse - Portfolio</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            background-image: url('"D:\Web Devlopment Dec 2024\Aditya Image.jpg"');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: rgba(0, 115, 230, 0.7);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(230, 247, 255, 0.9);
+        }
+
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #0073e6;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            color: #0073e6;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        /* About Section */
+        .section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #0073e6;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+        }
+
+        /* Skills List */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skills span {
+            background: #0073e6;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Projects List */
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .project {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .project h3 {
+            color: #0073e6;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            margin-bottom: 5px;
+        }
+
+        .project-details {
+            display: none;
+            color: #555;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #0073e6;
+            color: #fff;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Aditya Zemse</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="D:\Web Devlopment Dec 2024\Aditya Image.jpg" alt="Profile Picture">
+        <h1>Hello, I'm Aditya Zemse</h1>
+        <p>Computer Engineer | Web Developer | Tech Enthusiast</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a recent graduate in <strong>Computer Engineering</strong> from Mumbai University. I have a passion for web development and programming. Currently, I am a Web Developer Intern at Cognifyz Technologies, where I apply my coding skills to real-world projects.</p>
+        <p>My goal is to secure a position as a web developer where I can grow, contribute, and solve challenging problems.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Java</span>
+            <span>React</span>
+            <span>Angular</span>
+            <span>Node.js</span>
+            <span>SQL</span>
+            <span>NoSQL</span>
+            <span>Machine Learning</span>
+            <span>Agile Methodologies</span>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Rock Paper Scissors</h3>
+                <p><strong>First Year</strong></p>
+                <p>A Python-based game where users compete against the computer. It randomly generates moves for quick and engaging gameplay.</p>
+                <div class="project-details">Description: A simple Python game with random moves.</div>
+            </div>
+            <div class="project">
+                <h3>Air Canvas</h3>
+                <p><strong>Second Year</strong></p>
+                <p>An interactive drawing tool using Python and OpenCV to create art in mid-air with hand gestures captured via a webcam.</p>
+                <div class="project-details">Description: Uses webcam and OpenCV for gesture recognition.</div>
+            </div>
+            <div class="project">
+                <h3>Computer Lab Inventory Management System</h3>
+                <p><strong>Third Year</strong></p>
+                <p>A system to track and manage lab equipment efficiently, allowing check-ins and check-outs with usage reports.</p>
+                <div class="project-details">Description: Manages lab inventory and reports.</div>
+            </div>
+            <div class="project">
+                <h3>Smart Blind Stick</h3>
+                <p><strong>Final Year</strong></p>
+                <p>A mobility aid for the visually impaired, integrating GPS for location tracking and GSM for emergency communication.</p>
+                <div class="project-details">Description: Uses GPS and GSM for emergency alerts and navigation.</div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Experience Section -->
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+		<p><strong>Robotics Devloper Intern</strong> at  Kodacy</p>
+        <p> As an intern at Kodacy Robotics, I contributed to the development and testing of advanced robotic systems. 
+My role involved programming and troubleshooting hardware, collaborating with a dynamic team on various 
+projects.</p>
+<p><strong>Web Devloper Intern</strong> at   Exposys Data Labs</p>
+        <p>As a web developer intern at Exposys Data Labs, I was responsible for designing and implementing user-friendly 
+web applications. I collaborated with the team to enhance functionality and optimize performance, utilizing 
+technologies like HTML, CSS, and JavaScript. </p>
+        <p><strong>Web Developer Intern</strong> at Cognifyz Technologies</p>
+        <p>In my internship, I worked on developing web applications, gaining hands-on experience in front-end and back-end technologies, debugging, and project management.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Aditya Zemse | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Show sections with animation
+        window.addEventListener('scroll', () => {
+            document.querySelectorAll('.section').forEach(section => {
+                if (section.getBoundingClientRect().top < window.innerHeight - 100) {
+                    section.classList.add('show');
+                }
+            });
+        });
+
+        // Toggle project details
+        document.querySelectorAll('.project').forEach(project => {
+            project.addEventListener('click', () => {
+                const details = project.querySelector('.project-details');
+                details.style.display = details.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+
+</body>
+</html>
